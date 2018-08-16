@@ -1,0 +1,56 @@
+<script language="JavaScript">
+<!--
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value * 1.470
+document.converter.pound.value = document.converter.euro.value * 0.717
+document.converter.taka.value = document.converter.euro.value * 103.60
+}
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * 0.680
+document.converter.pound.value = document.converter.dollar.value * 0.488
+document.converter.taka.value = document.converter.dollar.value * 83.60
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * 2.049
+document.converter.euro.value = document.converter.pound.value * 1.394
+document.converter.taka.value = document.converter.pound.value * 116.90
+}
+function takaConverter(){
+document.converter.dollar.value = document.converter.taka.value * 0.012
+document.converter.pound.value = document.converter.taka.value * 0.00855
+document.converter.euro.value = document.converter.taka.value * 0.00965
+}
+//-->
+</script>
+<form name="converter">
+<table border="3">
+<style type="text/css">
+table {border: 3px solid green;}
+tr {background-color:red;}
+td {text-decoration: underline;
+     text-decoration-color: blue; 
+      text-decoration-style: bold;
+       text-indent: 50px;
+         font-size: 25px;	
+          font-stretch: expanded;
+           font-style: oblique;
+            font-weight: bold;		   }
+
+</style>
+<tr>
+<td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+</tr>
+<tr>
+<td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+</tr>
+<tr>
+<td>Bangladeshi Taka: </td><td><input type="text" name="taka" onChange="takaConverter()" /></td>
+</tr>
+<tr>
+<td colspan="3" align="middle"><input type="button" value="Convert!" /></td>
+</tr>
+</table>
+</form>
